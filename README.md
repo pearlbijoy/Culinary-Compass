@@ -49,7 +49,7 @@ Here are some previews of the main features of the app:
 ---
 ## 🚀 How to Run
 1. Download or clone this repository to your computer  
-2. Install the required Python libraries (`pip install -r requirements.txt`)  
+2. Install the required Python libraries (`pip install PyQt5`) (`pip install PyQtWebEngine`) (`pip install folium`) (`pip install mysql-connector-python`) 
 3. Import the provided SQL database into your local server  
 4. Open the main Python file (`culcompcode.py`)  
 5. Update the SQL username and password in the code as per your setup  
