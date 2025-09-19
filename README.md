@@ -1,4 +1,4 @@
-<img width="1198" height="638" alt="image" src="https://github.com/user-attachments/assets/431dc96d-93d5-48c4-bddf-64d6384d58a8" /># 🍴 Culinary Compass
+# 🍴 Culinary Compass
 
 A Python + SQL based culinary app with a PyQt user interface.  
 It suggests recipes based on available ingredients and allows users to search for restaurants with multiple filters.  
