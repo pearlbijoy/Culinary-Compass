@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>homebg.png</file>
+    <file>icons8-search-50.png</file>
+    <file>maps-flags_447031.png</file>
+    <file>icons8-account-48.png</file>
+  </qresource>
+</RCC>

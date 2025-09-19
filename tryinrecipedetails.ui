@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Recdets</class>
+ <widget class="QMainWindow" name="Recdets">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1750</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1750</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1750</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">/*VERTICAL SCROLLBAR*/
+QScrollBar:vertical {
+	boder: none;
+	background-color: rgb(231, 232, 225);
+	width:20px;
+	margin: 15px 0 15px 0;
+	boder-radius: 0px;
+}
+/*HANDLEBAR VERTICAL*/
+QScrollBar::handle:vertical {
+	background-color: rgb(206, 207, 201);
+	min-height: 60px;
+	boder-radius: 14px;
+}
+QScrollBar::handle:vertical:hover{
+	background-color: rgb(206, 207, 201);
+}
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(206, 207, 201);
+}
+/*BTN TOP -SCROLLBAR*/
+QScrollBar::sub-line:vertical{
+	boder:none;
+	background-color: rgb(206, 207, 201);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover{
+	background-color: rgb(206, 207, 201);
+}
+QScrollBar::sub-line:vertical:pressed{
+	background-color: rgb(206, 207, 201);
+}
+/*BTN BOTTOM -SCROLLBAR*/
+QScrollBar::add-line:vertical{
+	boder:none;
+	background-color: rgb(206, 207, 201);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover{
+	background-color: rgb(206, 207, 201);
+}
+QScrollBar::add-line:vertical:pressed{
+	background-color: rgb(206, 207, 201);
+}
+/*RESET ARROW*/
+QScrollBar::up-arrow:vertical,QScrollBar::down-arrow:vertical{
+	background: none;
+}
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
+	background: none;
+}
+QScrollBar::handle
+{
+background : gray;
+}
+/*horizontal SCROLLBAR*/
+QScrollBar:horizontal {
+	boder: none;
+	background-color: rgb(231, 232, 225);
+	width:20px;
+	margin: 15px 0 15px 0;
+	boder-radius: 0px;}
+
+
+</string>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1750</width>
+      <height>900</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 114, 81);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="recipename">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>110</y>
+       <width>941</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Century Schoolbook&quot;;
+background-color: rgba(132, 132, 132, 175);
+background-color: rgba(33,33, 33, 160);
+
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back_button">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>860</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(218, 218, 218);</string>
+     </property>
+     <property name="text">
+      <string>Go to search</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save">
+     <property name="geometry">
+      <rect>
+       <x>1230</x>
+       <y>130</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Save Recipe</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(218, 218, 218);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>saveicon.png</normaloff>saveicon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>100</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fav">
+     <property name="geometry">
+      <rect>
+       <x>1320</x>
+       <y>130</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Add To Favourites</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(218, 218, 218);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>favicon.png</normaloff>favicon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>100</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>-20</x>
+       <y>-10</y>
+       <width>1771</width>
+       <height>911</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(133, 149, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>About Us (1).png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>290</y>
+       <width>1311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(195, 195, 195, 60);
+background-color: rgba(115, 115, 115, 0);</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1289</width>
+        <height>529</height>
+       </rect>
+      </property>
+      <widget class="QFrame" name="frame_2">
+       <property name="geometry">
+        <rect>
+         <x>-1</x>
+         <y>0</y>
+         <width>1291</width>
+         <height>531</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(12, 12, 12, 90);
+
+color: rgb(255, 255, 255);
+font: 700 italic 12pt &quot;Century Schoolbook&quot;;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
+       <widget class="QLabel" name="details">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1291</width>
+          <height>681</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(63, 63, 63, 180);
+color: rgb(255, 255, 255);
+background-color: rgba(12, 12, 12, 160);
+font: 700 italic 14pt &quot;Century Schoolbook&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <property name="margin">
+         <number>3</number>
+        </property>
+        <property name="indent">
+         <number>0</number>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="homebtn">
+     <property name="geometry">
+      <rect>
+       <x>870</x>
+       <y>860</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(218, 218, 218);</string>
+     </property>
+     <property name="text">
+      <string>Go to home</string>
+     </property>
+    </widget>
+    <zorder>label</zorder>
+    <zorder>recipename</zorder>
+    <zorder>back_button</zorder>
+    <zorder>save</zorder>
+    <zorder>fav</zorder>
+    <zorder>scrollArea</zorder>
+    <zorder>homebtn</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

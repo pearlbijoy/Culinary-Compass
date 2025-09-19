@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="bgm">
+    <file>homebg.png</file>
+  </qresource>
+</RCC>

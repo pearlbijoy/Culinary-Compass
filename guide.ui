@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Guide</class>
+ <widget class="QMainWindow" name="Guide">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1750</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(247, 225, 212);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>1830</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*VERTICAL SCROLLBAR*/
+QScrollBar:vertical {
+	boder: none;
+	background-color: rgb(231, 232, 225);
+	width:20px;
+	margin: 15px 0 15px 0;
+	boder-radius: 0px;
+}
+/*HANDLEBAR VERTICAL*/
+QScrollBar::handle:vertical {
+	background-color: rgb(206, 207, 201);
+	min-height: 60px;
+	boder-radius: 14px;
+}
+QScrollBar::handle:vertical:hover{
+	background-color: rgb(206, 207, 201);
+}
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(206, 207, 201);
+}
+/*BTN TOP -SCROLLBAR*/
+QScrollBar::sub-line:vertical{
+	boder:none;
+	background-color: rgb(206, 207, 201);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover{
+	background-color: rgb(206, 207, 201);
+}
+QScrollBar::sub-line:vertical:pressed{
+	background-color: rgb(206, 207, 201);
+}
+/*BTN BOTTOM -SCROLLBAR*/
+QScrollBar::add-line:vertical{
+	boder:none;
+	background-color: rgb(206, 207, 201);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover{
+	background-color: rgb(206, 207, 201);
+}
+QScrollBar::add-line:vertical:pressed{
+	background-color: rgb(206, 207, 201);
+}
+/*RESET ARROW*/
+QScrollBar::up-arrow:vertical,QScrollBar::down-arrow:vertical{
+	background: none;
+}
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
+	background: none;
+}
+/*horizontal SCROLLBAR*/
+QScrollBar:horizontal {
+	boder: none;
+	background-color: rgb(231, 232, 225);
+	width:20px;
+	margin: 15px 0 15px 0;
+	boder-radius: 0px;}
+
+
+</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>2000</width>
+        <height>2107</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-855</y>
+         <width>2018</width>
+         <height>1735</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>1735</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>2000</width>
+            <height>2000</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Centaur</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="toolTipDuration">
+           <number>-1</number>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="backtohome">
+           <property name="geometry">
+            <rect>
+             <x>798</x>
+             <y>1670</y>
+             <width>151</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(231, 232, 225);</string>
+           </property>
+           <property name="text">
+            <string>Back To Home</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="guidelabel">
+           <property name="geometry">
+            <rect>
+             <x>513</x>
+             <y>0</y>
+             <width>701</width>
+             <height>211</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>Guide1.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="stepoutinfo">
+           <property name="geometry">
+            <rect>
+             <x>225</x>
+             <y>330</y>
+             <width>1220</width>
+             <height>148</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>12</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The “Step out and explore feature lets you Immerse yourself in a rich tapestry of culinary delights&lt;/p&gt;&lt;p&gt;from around the world. &lt;/p&gt;&lt;p&gt;From local gems to international hotspots,this feature serves as your virtual passport to a world of flavors,&lt;/p&gt;&lt;p&gt; helping you discover new restaurants and cuisines with ease.&lt;/p&gt;&lt;p&gt;Simply click on the “Step Out And Explore&amp;quot; button  on the homepage and then click explore on&lt;/p&gt;&lt;p&gt;the following page.&lt;/p&gt;&lt;p&gt;Enter the cuisine and region of your choice and have fun!&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="stepout">
+           <property name="geometry">
+            <rect>
+             <x>698</x>
+             <y>260</y>
+             <width>320</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>16</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Step  Out And Explore</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="stayininfo">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>690</y>
+             <width>1180</width>
+             <height>117</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>12</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Don't feel like stepping out but still hungry? Not a problem! &lt;/p&gt;&lt;p&gt;With our “Stay in” feature , you can explore a variety of recipes and create delicious dishes&lt;/p&gt;&lt;p&gt;fron the comfort of your own home, and with the ingredients  you already have.&lt;/p&gt;&lt;p&gt; Click on the “Stay in” button on the home page, and have fun digging through a treasure trove of recipes. &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="stayin">
+           <property name="geometry">
+            <rect>
+             <x>730</x>
+             <y>630</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>16</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Stay In</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="aboutheading">
+           <property name="geometry">
+            <rect>
+             <x>733</x>
+             <y>930</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>16</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>About</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="accountheading">
+           <property name="geometry">
+            <rect>
+             <x>733</x>
+             <y>1230</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>16</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="lineWidth">
+            <number>12</number>
+           </property>
+           <property name="text">
+            <string>Account</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="aboutinfo">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>990</y>
+             <width>1160</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>12</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Our team at Culinary Compass is made up of dedicated foodies, tech enthusiasts, and experienced chefs.&lt;/p&gt;&lt;p&gt; We believe that great food experiences go beyond just taste – they involve ambiance, service,&lt;/p&gt;&lt;p&gt;and the joy of discovery.&lt;/p&gt;&lt;p&gt;Find out more on our “About Us” pg.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="accountdesc">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>1285</y>
+             <width>1121</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>12</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Your User Account Page displays your profile details and lets you edit your&lt;/p&gt;&lt;p&gt; user name, name, region and password.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="intro">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>100</y>
+             <width>1231</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>12</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Embark on a delightful journey with Culinary Compass. This guide will help you navigate 
+through the app's features, ensuring that you make the most of your cooking experience.</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="gotoaccbtn">
+           <property name="geometry">
+            <rect>
+             <x>802</x>
+             <y>1400</y>
+             <width>141</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(231, 232, 225);</string>
+           </property>
+           <property name="text">
+            <string>Go To Account</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="cooknow">
+           <property name="geometry">
+            <rect>
+             <x>815</x>
+             <y>820</y>
+             <width>101</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(231, 232, 225);</string>
+           </property>
+           <property name="text">
+            <string>Cook Now</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="checkitoutbtn">
+           <property name="geometry">
+            <rect>
+             <x>804</x>
+             <y>1140</y>
+             <width>131</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(231, 232, 225);</string>
+           </property>
+           <property name="text">
+            <string>Check It Out</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="explorenowbtn">
+           <property name="geometry">
+            <rect>
+             <x>800</x>
+             <y>490</y>
+             <width>121</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(231, 232, 225);</string>
+           </property>
+           <property name="text">
+            <string>Explore Now</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="sides1">
+           <property name="geometry">
+            <rect>
+             <x>-10</x>
+             <y>150</y>
+             <width>201</width>
+             <height>601</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>11.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="sides3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>1270</y>
+             <width>171</width>
+             <height>441</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>18.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="sides2">
+           <property name="geometry">
+            <rect>
+             <x>-10</x>
+             <y>750</y>
+             <width>181</width>
+             <height>521</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>12.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="sides6">
+           <property name="geometry">
+            <rect>
+             <x>1480</x>
+             <y>690</y>
+             <width>191</width>
+             <height>501</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>17.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="sides7">
+           <property name="geometry">
+            <rect>
+             <x>1470</x>
+             <y>1190</y>
+             <width>181</width>
+             <height>521</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>18.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="sides5">
+           <property name="geometry">
+            <rect>
+             <x>1477</x>
+             <y>180</y>
+             <width>191</width>
+             <height>501</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>16.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="sides4">
+           <property name="geometry">
+            <rect>
+             <x>1477</x>
+             <y>-190</y>
+             <width>191</width>
+             <height>371</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>13.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="sides0">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>-100</y>
+             <width>191</width>
+             <height>261</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>13.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="guidepgheading.qrc"/>
+ </resources>
+ <connections/>
+</ui>
